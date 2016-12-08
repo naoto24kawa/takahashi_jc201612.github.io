@@ -7,13 +7,19 @@ body{
     margin-right: 10pt;
 }
 
-.photo-show { 
-    height: 250pt; /*表示したい大きさ*/
+.photo-show {
+    height: auto;
     width: 100%;
     position: relative;
 }
 
-.photo-show img { 
+.photo-show:after {
+    content:"";
+    display: block;
+    padding-top: 70%;
+}
+
+.photo-show img {
     animation: show 16s infinite;
     -webkit-animation: show 16s infinite;
     height: auto;
@@ -73,21 +79,32 @@ body{
 .photo-show img:nth-of-type(7) {
     animation-delay: 12s;
     -webkit-animation-delay: 12s;
-} 
+}
 .photo-show img:nth-of-type(8) {
     animation-delay: 14s;
     -webkit-animation-delay: 14s;
 }
 
-/*マウスが画像に重なった際、動きを止めて四角くする*/
-
-.photo-show img {
-    transition: 0.2s;
-    -webkit-transition: 0.2s;
+.course-comment {
+    margin-left: 10pt;
+    margin-right: 10pt;
 }
 
-.photo-show:hover img {
-    animation-play-state: paused;
-    -webkit-animation-play-state: paused;
-    border-radius: 0;
+.footer {
+  position: absolute;
+  width: 100%;
+  /* Set the fixed height of the footer here */
+  height: 60px;
+  background-color: #f5f5f5;
+}
+body > .container {
+  padding: 60px 15px 0;
+}
+.container .text-muted {
+  margin: 20px 0;
+}
+
+.footer > .container {
+  padding-right: 15px;
+  padding-left: 15px;
 }
