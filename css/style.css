@@ -3,8 +3,8 @@ body{
 }
 
 .card {
-    margin-left: 10pt;
-    margin-right: 10pt;
+    margin-left: 12pt;
+    margin-right: 12pt;
 }
 
 .photo-show {
@@ -20,8 +20,8 @@ body{
 }
 
 .photo-show img {
-    animation: show 16s infinite;
-    -webkit-animation: show 16s infinite;
+    animation: show 12s infinite;
+    -webkit-animation: show 12s infinite;
     height: auto;
     width: 100%;
     opacity: 0;
@@ -76,18 +76,10 @@ body{
     -webkit-animation-delay: 10s;
 }
 
-.photo-show img:nth-of-type(7) {
-    animation-delay: 12s;
-    -webkit-animation-delay: 12s;
-}
-.photo-show img:nth-of-type(8) {
-    animation-delay: 14s;
-    -webkit-animation-delay: 14s;
-}
-
 .course-comment {
-    margin-left: 10pt;
-    margin-right: 10pt;
+    margin-top: 10pt;
+    margin-left: 12pt;
+    margin-right: 12pt;
 }
 
 .footer {
